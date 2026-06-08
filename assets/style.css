@@ -153,6 +153,12 @@ header.hero { padding: 54px 0 8px; }
   padding: 2px 9px; border-radius: 5px; letter-spacing: 0.01em;
 }
 
+/* ---------- sub-heading within a section ---------- */
+.subhead {
+  font-size: 15px; font-weight: 700; color: var(--ink);
+  margin: 26px 0 13px;
+}
+
 /* ---------- two-column compact lists (teaching/service) ---------- */
 .stack { display: grid; gap: 18px; }
 .stack .item .it-title { font-weight: 600; color: var(--ink); }
@@ -203,6 +209,9 @@ footer {
 @media (max-width: 560px) {
   /* name lives in the hero anyway — drop it from the bar so links never collide */
   nav.top .brand { display: none; }
-  nav.top .wrap { justify-content: center; }
-  nav.top ul { gap: 18px; }
+  nav.top .wrap {
+    justify-content: center; height: auto;
+    padding-top: 9px; padding-bottom: 9px;
+  }
+  nav.top ul { flex-wrap: wrap; justify-content: center; gap: 9px 16px; }
 }
