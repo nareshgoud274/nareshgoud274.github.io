@@ -164,6 +164,15 @@ header.hero { padding: 54px 0 8px; }
 .stack .item .it-title { font-weight: 600; color: var(--ink); }
 .stack .item .it-desc { color: var(--ink-soft); font-size: 15.5px; margin-top: 2px; }
 
+/* ---------- highlighted tag pills (program committees) ---------- */
+.tags { display: flex; flex-wrap: wrap; gap: 9px; margin: 2px 0 6px; }
+.tag {
+  display: inline-block; font-size: 14.5px; font-weight: 600;
+  padding: 6px 13px; border-radius: 999px;
+  color: var(--accent); background: var(--bg-soft);
+  border: 1px solid #cdddec;
+}
+
 /* ---------- contact ---------- */
 .contact-rows { display: grid; gap: 10px; }
 .contact-rows .row { display: grid; grid-template-columns: 110px 1fr; gap: 10px; }
